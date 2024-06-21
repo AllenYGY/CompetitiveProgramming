@@ -3,29 +3,8 @@
 #define int long long
 #define endl '\n'
 using namespace std;
- 
-int read(){
-    int x = 0, f = 1;
-    char ch = getchar();
-    while (ch < '0' || ch > '9'){
-        if (ch == '-')
-            f = -1;
-        ch = getchar();
-    }
-    while (ch >= '0' && ch <= '9')
-        x = x * 10 + ch - '0', ch = getchar();
-    return x * f;
-}
- 
-void write(int x){
-    if (x < 0)
-        putchar('-'), x = -x;
-    if (x > 9)
-        write(x / 10);
-    putchar(x % 10 + '0');
-}
 
-string transform(string s) {
+string Preprocess(string s) { // 字符串预处理
     string res = "#";
     for (int i = 0; i < s.size(); i++) {
         res += s[i];
@@ -34,7 +13,7 @@ string transform(string s) {
     return res;
 }
 
-string transformBack(string s) {
+string Postprocess(string s) { // 字符串还原
     string res = "";
     for (int i = 0; i < s.size(); i++) {
         if (s[i] != '#') {
@@ -45,7 +24,7 @@ string transformBack(string s) {
 }
 
 string manacher(string s) {
-    string t = transform(s);
+    string t = Preprocess(s);
     string ans = "";
     vector<int> p(t.size(), 0);
     int mx = 0;
@@ -64,11 +43,6 @@ string manacher(string s) {
         }
         p[i] = len;
     }
-    ans = transformBack(ans);
+    ans = Postprocess(ans);
     return ans;
-}
- 
-signed main() {
- 
-    return 0;
 }

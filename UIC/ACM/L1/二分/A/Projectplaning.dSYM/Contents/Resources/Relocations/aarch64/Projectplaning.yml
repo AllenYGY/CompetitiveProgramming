@@ -1,0 +1,12 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     Projectplaning
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: __Z4readv, symObjAddr: 0x0, symBinAddr: 0x100003B1C, symSize: 0x10C }
+  - { offsetInCU: 0xBDE, offset: 0xBDE, size: 0x8, addend: 0x0, symName: __ZNSt3__13minB7v160006IxEERKT_S3_S3_, symObjAddr: 0x3A4, symBinAddr: 0x100003EC0, symSize: 0x2C }
+  - { offsetInCU: 0xC21, offset: 0xC21, size: 0x8, addend: 0x0, symName: __ZNSt3__13minB7v160006IxNS_6__lessIxxEEEERKT_S5_S5_T0_, symObjAddr: 0x3D0, symBinAddr: 0x100003EEC, symSize: 0x54 }
+  - { offsetInCU: 0x31C4, offset: 0x31C4, size: 0x8, addend: 0x0, symName: __Z4readv, symObjAddr: 0x0, symBinAddr: 0x100003B1C, symSize: 0x10C }
+  - { offsetInCU: 0x320C, offset: 0x320C, size: 0x8, addend: 0x0, symName: __Z5writex, symObjAddr: 0x10C, symBinAddr: 0x100003C28, symSize: 0x94 }
+  - { offsetInCU: 0x3234, offset: 0x3234, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x1A0, symBinAddr: 0x100003CBC, symSize: 0x204 }
+  - { offsetInCU: 0x330D, offset: 0x330D, size: 0x8, addend: 0x0, symName: __ZNKSt3__16__lessIxxEclB7v160006ERKxS3_, symObjAddr: 0x424, symBinAddr: 0x100003F40, symSize: 0x34 }
+...

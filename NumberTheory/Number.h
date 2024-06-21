@@ -1,6 +1,9 @@
-#include <iostream>
-#include <cstdio>
-#include <cmath>
+#include<bits/stdc++.h>
+#include<iostream>
+#define int long long
+#define endl '\n'
+using namespace std;
+ 
 using namespace std;
 
 int gcd(int a, int b);

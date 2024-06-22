@@ -13,16 +13,6 @@ string Preprocess(string s) { // 字符串预处理
     return res;
 }
 
-string Postprocess(string s) { // 字符串还原
-    string res = "";
-    for (int i = 0; i < s.size(); i++) {
-        if (s[i] != '#') {
-            res += s[i];
-        }
-    }
-    return res;
-}
-
 string manacher(string s) {
     string t = Preprocess(s);
     string ans = "";
@@ -39,10 +29,9 @@ string manacher(string s) {
         }
         if(len > mx){
             mx = len;
-            ans = t.substr(i - len + 1, 2 * len - 1); // 2 * len - 1 是原字符串的长度
+            ans = s.substr((i - len + 1) / 2, len - 1); // len - 1 是原字符串的长度
         }
         p[i] = len;
     }
-    ans = Postprocess(ans);
     return ans;
 }

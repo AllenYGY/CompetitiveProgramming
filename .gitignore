@@ -1,2 +1,4 @@
 .vscode
 algorithm-journey
+#ignore bin folder
+bin

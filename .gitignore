@@ -3,3 +3,4 @@ algorithm-journey
 #ignore bin folder
 *bin
 *.cph
+.DS_Store

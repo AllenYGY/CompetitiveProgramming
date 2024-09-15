@@ -1,4 +1,5 @@
 .vscode
 algorithm-journey
 #ignore bin folder
-bin
+*bin
+*.cph

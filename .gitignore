@@ -6,3 +6,4 @@ algorithm-journey
 *.DS_Store
 *.
 algorithmic-toolbox/
+**/bin/
